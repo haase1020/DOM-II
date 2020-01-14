@@ -121,3 +121,17 @@ transition.addEventListener('transitionstart', function() {
 transition.addEventListener('transitionend', function() {
   message.textContent = 'transitionend fired';
 });
+
+
+//prevent propogation
+const body = document.querySelector('body');
+
+body.addEventListener("click", ()=>{
+    body.style.backgroundColor = "red";
+})
+
+nav.addEventListener("click", ()=>{
+    nav.style.backgroundColor="blue";
+    event.stopPropagation();
+}
+)

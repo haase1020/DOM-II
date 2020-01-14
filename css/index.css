@@ -271,6 +271,16 @@ img {
     width: 100%;
   }
 }
+.home .transition {
+  background: #ff0000;
+  transition-property: transform, background;
+  transition-duration: 2s;
+  transition-delay: 1s;
+}
+.home .transition:hover {
+  transform: rotate(90deg);
+  background: rgba(255, 0, 0, 0);
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;

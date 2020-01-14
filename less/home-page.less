@@ -50,7 +50,18 @@
       }
     }
   }
-
+  .transition {
+    
+    background: rgba(255,0,0,1);
+    transition-property: transform, background;
+    transition-duration: 2s;
+    transition-delay: 1s;
+  }
+  
+  .transition:hover {
+    transform: rotate(90deg);
+    background: rgba(255,0,0,0);
+  }
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;

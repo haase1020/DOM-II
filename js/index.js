@@ -135,3 +135,22 @@ nav.addEventListener("click", ()=>{
     event.stopPropagation();
 }
 )
+
+//prevent default
+
+const stopLink = document.querySelector(".letsgo");
+
+stopLink.addEventListener("click", (event) => {
+  event.preventDefault();
+  console.log("stopped the link")
+})
+
+
+//stretch
+
+TweenMax.to(".boing", 2, {
+    y: -100,
+    ease: Elastic.easeOut.config(1, 0.3),
+    yoyo: true,
+    repeat: -1
+  });

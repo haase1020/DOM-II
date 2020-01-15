@@ -148,9 +148,6 @@ stopLink.addEventListener("click", (event) => {
 
 //stretch
 
-TweenMax.to(".boing", 2, {
-    y: -100,
-    ease: Elastic.easeOut.config(1, 0.3),
-    yoyo: true,
-    repeat: -1
-  });
+const mainNav =document.querySelector(".main-navigation");
+  mainNav.addEventListener("click", ()=>{
+      gsap.to(mainNav, {duration: 2, x:300, backgroundColor: orange})});
